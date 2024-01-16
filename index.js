@@ -68,7 +68,7 @@ const cities = [
 
 app.use(
   cors({
-    origin: ["https://the-react-quiz-frontend.vercel.app/"],
+    origin: ["https://worldwise-frontend.vercel.app/app/cities"],
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
   })
