@@ -79,7 +79,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/cities", (req, res) => {
-  res.json(questions);
+  res.json(cities);
 });
 
 app.listen(port, () => {
