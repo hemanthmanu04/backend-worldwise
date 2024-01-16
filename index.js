@@ -74,11 +74,11 @@ app.use(
   })
 );
 
-app.get("/questions", (req, res) => {
+app.get("/", (req, res) => {
   res.json("Welcome to worldwise app!!");
 });
 
-app.get("/questions", (req, res) => {
+app.get("/cities", (req, res) => {
   res.json(questions);
 });
 
