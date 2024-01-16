@@ -78,7 +78,7 @@ app.get("/", (req, res) => {
   res.json("Welcome to worldwise app!!");
 });
 
-app.get("/cities", (req, res) => {
+app.get("/app/cities", (req, res) => {
   res.json(cities);
 });
 
