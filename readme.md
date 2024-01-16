@@ -1,3 +1,3 @@
-# Backend for ReactQuiz
+# Backend for Worldwise
 
-## Fake API which has set of questions stored for the quiz
+## Fake API which contains the data of the cities to which the user as travelled to.
