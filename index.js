@@ -81,7 +81,20 @@ app.get("/", (req, res) => {
 app.get("/cities", (req, res) => {
   res.json(cities);
 });
+app.get("/", (req, res) => {
+  res.json("Welcome to worldwise app!!");
+});
 
+app.get("/cities/:id", (req, res) => {
+  const cityId = req.params.id;
+  const city = cities.find((c) => c.id === cityId);
+
+  if (city) {
+    res.json(city);
+  } else {
+    res.status(404).json({ error: "City not found" });
+  }
+});
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
