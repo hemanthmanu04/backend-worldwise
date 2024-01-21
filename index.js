@@ -68,7 +68,7 @@ const cities = [
 
 app.use(
   cors({
-    origin: ["https://worldwise-frontend.vercel.app/app/cities"],
+    origin: ["https://worldwise-frontend.vercel.app"],
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
   })
