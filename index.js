@@ -2,7 +2,7 @@ import express from "express";
 const app = express();
 const port = 9001; // Use the provided PORT or 9000 by default
 import cors from "cors";
-
+app.use(express.json());
 const cities = [
   {
     cityName: "Lisbon",
